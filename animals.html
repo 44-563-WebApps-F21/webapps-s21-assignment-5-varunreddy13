@@ -15,6 +15,28 @@
 </head>
 <body>
 
+    <nav class="navbar navbar-expand-md navbar-light" style="color: purple; background-color:lavender;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="animals.html">Interesting Animals</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="animals.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="plain.html">Plain</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="train.html">Train</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
 <h1>Animals by Varun Reddy Musku</h1>
 
     <div class="container">
@@ -51,6 +73,122 @@
             <img src="ukari.jpg" class="img-thumbnail" alt="uakari" width="400" height="500">
             <img src = "maltese-1.jpg" class="img-thumbnail" alt="maltse" width="400" height="500">
         </div>
+        <br>
+
+        <caption style="font-weight: bold; font-size: 20px;">&nbsp; <b>Animals Table</b></caption>
+        <br/>
+        <br/>
+        <table class="table table-bordered table-hover table-sm table-striped" style="width: 100%;">
+          <thread style="text-align: left; border: 2px; font-size: 20px;" class="table_head">
+              <tr style="border: 2px; text-align: center; background-color:brown; color: white;">
+                <th scope="col">Letter</th>
+                <th scope="col">Animal</th>
+                <th scope="col">City</th>
+                <th scope="col">Car</th>
+              </tr>  
+          </thread>
+          <tbody style="text-align: center; border: 2px; width: 60%;" class="table_body">
+              <tr style="border: 2px; text-align: center;" class="table-primary">
+                <th scope="row" style="text-align: center; color:darkblue">M</th>
+                <td>Maltese</td>
+                <td>Congo</td>
+                <td>Hyundai</td>
+              </tr>
+              <tr class="table-secondary" style="border: 2px; color:darkblue">
+                <th scope="row" style="text-align: center;">U</th>
+                <td>Umbrellabird</td>
+                <td>Brazil</td>
+                <td>Audi</td>
+              </tr>
+              <tr class="table-success" style="border: 2px;color:darkblue">
+                <th scope="row" style="text-align: center;">S</th>
+                <td>Sheep</td>
+                <td>South America</td>
+                <td>Benz</td>
+              </tr>
+              <tr class="table-warning" style="border: 2px;color:darkblue">
+                <th scope="row" style="text-align: center;">K</th>
+                <td>King Cobra</td>
+                <td>India</td>
+                <td>BMW</td>
+              </tr>
+              <tr class="table-info" style="border: 2px;color:darkblue">
+                <th scope="row" style="text-align: center;">U</th>
+                <td>Uakari</td>
+                <td>South Africa</td>
+                <td>GMC</td>
+              </tr>
+              <tr class="table-danger " style="border: 2px;color:darkblue">
+                <th scope="row" style="text-align: center;">V</th>
+                <td>Vulture</td>
+                <td>Australia</td>
+                <td>Jeep</td>
+              </tr>
+          </tbody>
+        </table>
+        <br/>
+
+
+        <span class="label_success" style="font-size: 1rem; color:black; background-color: darkolivegreen; padding:10px; font-family: Arial, Helvetica, sans-serif;">Buttons & Button group</span>
+    <br>
+    <br>
+    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups"></div>
+      <div class="btn-group" role="group" aria-label="success group">
+        <button type="button" class="btn btn-success">M</button>
+        <button type="button" class="btn btn-success">U</button>
+        <button type="button" class="btn btn-success">S</button>
+      </div>
+      <div class="btn-group" role="group" aria-label="warning group">
+        <button type="button" class="btn btn-warning">K</button>
+        <button type="button" class="btn btn-warning">U</button>
+      </div>
+      <div class="btn-group" role="group" aria-label="danger group">
+        <button type="button" class="btn btn-danger">V</button>
+      </div>
+    </div>
+    <br/>
+    <br/>
+
+
+    <div class="dropdown">
+        <div class="btn-group" role="group">
+          <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <li><a class="dropdown-item" href="plain.html">Plain Page</a></li>
+            <li class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="train.html">Train Page</a></li>
+          </ul>
+        </div>
+      </div>
+      <br/>
+      <br/>
+
+
+      <form style="padding-left: 20px;">
+        <div class="form-group">
+          <label for="InputEmail1" class="form-label">&nbsp;Email address</label>
+          <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="Enter your email">
+          <div id="emailHelp" class="form-text">&nbsp;We'll never share your email with anyone else.</div>
+        </div>
+        <br/>
+        <div class="form-group">
+          <label for="Animal-label-name" class="form-label">&nbsp;Animal</label>
+          <input type="text" id="animalName" class="form-control" placeholder="Enter your animal">
+        </div>
+        <br/>
+        <div class="form-check">
+          <label class="form-check-label" for="exampleCheck1">Sign up for newsletter? </label>
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        </div>
+        <br/>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      <br>
+      <br>
+
+
 
     </body>
 </html>
